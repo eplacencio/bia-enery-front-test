@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-background: 0, 0%, 98%;
+    --color-text: 200, 15%, 8%;
+    --color-input: 0, 0%, 52%;
+    --color-element: 0, 0%, 100%;
+  }
+  :root[class='darkTheme'] {
+    --color-background: 207, 26%, 17%;
+    --color-element: 209, 23%, 22%;
+    --color-input: 0, 0%, 100%;
+    --color-text: 0, 0%, 100%;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline-width: 0;
+}
