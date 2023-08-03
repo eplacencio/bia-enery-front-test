@@ -93,7 +93,7 @@
 
 The architecture was created with main folders as **pages, componets, styles, shared, services, hooks, etc**. That's made it as simple way to find the main folders of the core.
 
-Inside of components, all of them has its own folder, in order to create his own unit test inside the folder (*that's a easy way to understand the component functionality*).
+Inside of components, all of them has his own folder, in order to create his own unit test inside the folder (*that's a easy way to understand the component functionality*).
 
 Service's folder has the functions to obtain/call the API, so, the hook's folder had the way to manage gets on API and return an status, data, etc. It's used **ReactQuey** to allow a retry call to the service and return as the same time an status when calling the API, like **isLoading** (for example).
 
